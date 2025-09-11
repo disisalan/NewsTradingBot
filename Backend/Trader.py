@@ -1,0 +1,3 @@
+
+def makingTrade(news):
+    print()

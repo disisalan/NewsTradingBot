@@ -1,0 +1,17 @@
+so data end points :
+    - see the news
+    - see the trades
+    - see the decisions 
+    - see the balance / portfolio
+
+work flow
+    - fetch new every 10 mins 
+        -calls scraper / api
+        - logs news into db
+    - run it throught ai models
+        -calls model / api
+        -logs decisions into db
+    - start trades if any
+        - track trades
+        - log trade
+        - close wrt to condition
