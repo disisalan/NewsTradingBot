@@ -9,10 +9,10 @@ app = FastAPI()
 
 # GET route
 @app.post("/routine")
-def routine():
-    news=Scraper.gettingnews()
-    anaslysis=Analyse.analysenews(news)
-    Trader.maketrade(anaslysis)
+async def routine():
+    news= await Scraper.gettingnews()
+    anaslysis= await Analyse.analysenews(news)
+    signal= await Trader.maketrade(anaslysis)
     return {"msg":"routine Completed"}
 
 
