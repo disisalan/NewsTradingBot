@@ -11,8 +11,6 @@ app = FastAPI()
 @app.post("/routine")
 async def routine():
     news= await Scraper.gettingnews()
-    anaslysis= await Analyse.analysenews(news)
-    signal= await Trader.maketrade(anaslysis)
     return {"msg":"routine Completed"}
 
 
