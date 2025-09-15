@@ -19,6 +19,8 @@ def et_news():
     for item in news_items:
         if "title" not in item:
             continue
+        if "data" in item:
+            continue
 
         raw_dt = item.get("date", "").strip()
         date_str, time_str = None, None

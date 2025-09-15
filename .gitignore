@@ -1,0 +1,12 @@
+# Environment variables
+.env
+
+# Virtual environment folder
+venv/
+
+# Python cache
+__pycache__/
+
+# Other files you might want to ignore
+*.pyc
+news.json
