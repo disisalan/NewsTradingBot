@@ -63,3 +63,4 @@ def gettingnews():
     # with open("news.json", "x") as f:  # "x" mode = create, fail if exists
     #     json.dump(news, f, indent=4)
     save_news(news)
+gettingnews()
