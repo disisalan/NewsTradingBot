@@ -1,8 +1,8 @@
 
-import livemint
-import mc
-import et
-import zero
+import Backend.Scraper.livemint as livemint
+import Backend.Scraper.mc as mc
+import Backend.Scraper.et as et
+import Backend.Scraper.zero as zero
 
 from dotenv import load_dotenv
 import os

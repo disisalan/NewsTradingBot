@@ -6,7 +6,9 @@ venv/
 
 # Python cache
 __pycache__/
-
+Lambda/
+/psycopg2.zip
+setup.py
 # Other files you might want to ignore
 *.pyc
 news.json
